@@ -15,7 +15,7 @@
 二维码分享链接  
 下载限速 
 ### 接口文档 
-https://web.postman.co/collections/12012080-9942d993-bd5f-40e5-8a05-df6fe97131d5?version=latest&workspace=95a0a05f-7757-4f7d-8ded-c4b21b722b02#7c711c5c-6f3b-402b-a803- 51f8bca3d370 
+https://web.postman.co/collections/12012080-9942d993-bd5f-40e5-8a05-df6fe97131d5?version=latest&workspace=95a0a05f-7757-4f7d-8ded-c4b21b722b02#7c711c5c-6f3b-402b-a803-51f8bca3d370 
 ### 已实现功能 
 - 文件上传 
 使用gin框架中的c.FormFile获取文件，文件存于./file中
