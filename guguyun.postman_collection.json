@@ -1,0 +1,739 @@
+{
+	"info": {
+		"_postman_id": "9942d993-bd5f-40e5-8a05-df6fe97131d5",
+		"name": "guguyun",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "登录",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "gugugu",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "gugu666",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/user/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "登录失败",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "gugugu",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "gugu66",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/user/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 30 Jul 2020 01:10:37 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "97"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"error\": null,\n    \"info\": \"failure\",\n    \"message\": \"登录失败，用户名或密码错误！\"\n}"
+				},
+				{
+					"name": "登录成功",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "gugugu",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "gugu666",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/user/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 30 Jul 2020 00:00:48 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "277"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 101,\n    \"info\": \"success\",\n    \"message\": \"登陆成功！欢迎回来！\",\n    \"token\": \"eyJ0eXAiOiJHUk9NIiwiYWxnIjoiSFMyNTYifQ==.eyJpc3MiOiJIb3NoaW5vU3lvdSIsImV4cCI6IjE1OTczNjMyNDgiLCJpYXQiOiIxNTk2MDY3MjQ4IiwidXNlcm5hbWUiOiJndWd1Z3UifQ==.NntAwaf0ya+ICleXUKSRCRJzuQH8Teq9EMpSnefy4NQ=\"\n}"
+				}
+			]
+		},
+		{
+			"name": "注册",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "syouzx",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "hoshino66",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/user/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "注册失败：用户名存在",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "syouzx",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "hoshino66",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/user/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 30 Jul 2020 01:08:40 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "91"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"error\": null,\n    \"info\": \"failure\",\n    \"message\": \"注册失败，用户名已存在！\"\n}"
+				},
+				{
+					"name": "注册成功",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "gugugu",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "gugu666",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/user/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 29 Jul 2020 23:46:41 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "57"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 100,\n    \"info\": \"success\",\n    \"message\": \"注册成功！\"\n}"
+				}
+			]
+		},
+		{
+			"name": "修改密码",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJHUk9NIiwiYWxnIjoiSFMyNTYifQ==.eyJpc3MiOiJIb3NoaW5vU3lvdSIsImV4cCI6IjE1OTczNjY1NDQiLCJpYXQiOiIxNTk2MDcwNTQ0IiwidXNlcm5hbWUiOiJndWd1Z3UifQ==.YIvqVE49Zl7I/kCnciXP0wYJr4Bnm3Vujo60l3bTipM=",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "gugugu",
+							"type": "text"
+						},
+						{
+							"key": "oldPassword",
+							"value": "gugu66",
+							"type": "text"
+						},
+						{
+							"key": "newPassword",
+							"value": "guguwudi",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/user/changePassword",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"changePassword"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "修改密码失败：header解析",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "gugugu",
+									"type": "text"
+								},
+								{
+									"key": "oldPassword",
+									"value": "gugu66",
+									"type": "text"
+								},
+								{
+									"key": "newPassword",
+									"value": "guguwudi",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/user/changePassword",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"changePassword"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 30 Jul 2020 01:09:16 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "70"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"error\": 6,\n    \"info\": \"failure\",\n    \"message\": \"header解析错误\"\n}"
+				},
+				{
+					"name": "修改密码失败：header解析",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "gugugu",
+									"type": "text"
+								},
+								{
+									"key": "oldPassword",
+									"value": "gugu66",
+									"type": "text"
+								},
+								{
+									"key": "newPassword",
+									"value": "guguwudi",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/user/changePassword",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"changePassword"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 30 Jul 2020 01:06:27 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "70"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 201,\n    \"error\": 6,\n    \"info\": \"failure\",\n    \"message\": \"header解析错误\"\n}"
+				},
+				{
+					"name": "修改密码成功",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "gugugu",
+									"type": "text"
+								},
+								{
+									"key": "oldPassword",
+									"value": "gugu66",
+									"type": "text"
+								},
+								{
+									"key": "newPassword",
+									"value": "guguwudi",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/user/changePassword",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"changePassword"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 30 Jul 2020 01:07:40 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "63"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 100,\n    \"info\": \"success\",\n    \"message\": \"修改密码成功！\"\n}"
+				}
+			]
+		},
+		{
+			"name": "注销账户",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": [
+				{
+					"name": "注销账户成功",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "syouzx",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "hoshino66",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/user/close",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"close"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 30 Jul 2020 01:13:54 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "63"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 100,\n    \"info\": \"success\",\n    \"message\": \"注销账户成功！\"\n}"
+				},
+				{
+					"name": "注销账户失败：用户名或密码错误",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "syouzx",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "hoshino666",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/user/close",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"close"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 30 Jul 2020 01:13:36 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "103"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"error\": null,\n    \"info\": \"failure\",\n    \"message\": \"注销账户失败，用户名或密码错误！\"\n}"
+				}
+			]
+		},
+		{
+			"name": "上传文件",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": [
+				{
+					"name": "上传文件失败",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "path",
+									"value": "/aaa",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/file/upload",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"file",
+								"upload"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 30 Jul 2020 01:16:48 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "74"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"error\": {},\n    \"info\": \"failure\",\n    \"message\": \"读取文件失败！\"\n}"
+				}
+			]
+		}
+	],
+	"protocolProfileBehavior": {}
+}
